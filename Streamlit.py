@@ -6,7 +6,11 @@ import matplotlib.pyplot as plt
 import joblib 
 from numerize.numerize import numerize
 import streamlit as st 
-
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder
+from xgboost import XGBRegressor
+import sklearn
 
 df = pd.read_csv("cleaned_data (1).csv")
 
@@ -266,7 +270,7 @@ if __name__ == "__main__":
     main()
 
 
-              
+print(sklearn.__version__)              
  
 
 
